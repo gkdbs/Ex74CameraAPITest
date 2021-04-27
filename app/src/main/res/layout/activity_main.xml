@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <!-- 카메라에서 읽어들이는 정보를 미리보기하는 뷰 -->
+    <!-- 카메라미리보기 뷰는 존재하지 않기에 직접 설계  -->
+    <com.mrhi2020.ex74cameraapitest.CameraView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ms19"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="capture"
+        android:onClick="clickCapture"/>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
